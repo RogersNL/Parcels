@@ -1,0 +1,2 @@
+cd ../Parcels/
+dotnet run

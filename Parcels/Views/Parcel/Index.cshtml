@@ -1,0 +1,17 @@
+
+<h1>List of parcels</h1>
+<ol>
+  @foreach (var parcel in Model)
+  {
+    <li>
+      <h4>Parcel Information:</h4>
+      <p>Length: @parcel.GetLength()</p>
+      <p>Width: @parcel.GetWidth()</p>
+      <p>Height: @parcel.GetHeight()</p>
+      <p>Weight: @parcel.GetWeight()</p>
+      <p>Package Volume: @parcel.Volume()</p>
+      <p>Cost to Ship: @parcel.CostToShip()</p>
+    </li>
+  }
+</ol>
+<a href="/">Add a new parcel.</a>
